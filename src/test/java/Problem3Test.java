@@ -1,6 +1,6 @@
 import Problem3.*;
 import org.junit.Test;
-
+//Timothy Muresan
 import static org.junit.Assert.*;
 
 // DO NOT REMOVE OR CHANGE ANYTHING HERE!

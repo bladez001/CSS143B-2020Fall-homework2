@@ -1,5 +1,5 @@
 package Problem3;
-
+//Timothy Muresan
 public class MovieComedy extends Movie {
     private int lateFeePerDayInDollar = 3;
 

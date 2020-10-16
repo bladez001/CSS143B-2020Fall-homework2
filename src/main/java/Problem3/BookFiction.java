@@ -1,5 +1,5 @@
 package Problem3;
-
+//Timothy Muresan
 public class BookFiction extends Book {
 
     private int lateFeePerDayInDollar = 2;
