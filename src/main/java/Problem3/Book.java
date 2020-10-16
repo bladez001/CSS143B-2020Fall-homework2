@@ -24,7 +24,15 @@ public abstract class Book implements StoreMediaOperations {
     @Override
     public boolean equals(Object obj) {
         // homework
+        if (this == obj) {
+            return true;
+        }
+
+        if (!(obj instanceof Book)) {
+            return false;
+        }
+
         Book b = (Book) obj;
-        return (this == b);
+        return this.id == b.id && this.title == b.title && this.author == b.author;
     }
 }
