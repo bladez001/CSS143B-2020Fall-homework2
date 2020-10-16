@@ -1,5 +1,5 @@
 import org.junit.Test;
-
+//Timothy Muresan
 import static org.junit.Assert.assertEquals;
 
 public class Problem2Test {
