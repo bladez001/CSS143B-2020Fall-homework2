@@ -15,7 +15,6 @@ public abstract class Book implements StoreMediaOperations {
 
     // copy constructor
     public Book(Book anotherBook) {
-        // homework
         title = anotherBook.title;
         author = anotherBook.author;
         id = anotherBook.id;
@@ -23,7 +22,6 @@ public abstract class Book implements StoreMediaOperations {
 
     @Override
     public boolean equals(Object obj) {
-        // homework
         if (this == obj) {
             return true;
         }
