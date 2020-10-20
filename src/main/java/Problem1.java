@@ -24,9 +24,7 @@ public class Problem1 {
 
         while (index <= end && start < end) {
             if (nums[index] == 0) {
-                    temp = nums[index];
-                    nums[index] = nums[start];
-                    nums[start] = temp;
+                swap(nums, start, index);
                     start++;
                     index++;
             }
@@ -34,13 +32,18 @@ public class Problem1 {
                     index++;
             }
             else {
-                    temp = nums[index];
-                    nums[index] = nums[end];
-                    nums[end] = temp;
+                swap(nums, end, index);
                     end--;
             }
 
         }
 
+    }
+
+    private static void swap(int[] nums, int start, int index) {
+        int temp;
+        temp = nums[index];
+        nums[index] = nums[start];
+        nums[start] = temp;
     }
 }
