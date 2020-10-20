@@ -1,5 +1,5 @@
 package Problem3;
-
+//Timothy Muresan
 import java.util.UUID;
 
 public abstract class Book implements StoreMediaOperations {
@@ -15,11 +15,22 @@ public abstract class Book implements StoreMediaOperations {
 
     // copy constructor
     public Book(Book anotherBook) {
-        // homework
+        title = anotherBook.title;
+        author = anotherBook.author;
+        id = anotherBook.id;
     }
 
     @Override
     public boolean equals(Object obj) {
-        // homework
+        if (this == obj) {
+            return true;
+        }
+
+        if (!(obj instanceof Book)) {
+            return false;
+        }
+
+        Book b = (Book) obj;
+        return this.id == b.id && this.title == b.title && this.author == b.author;
     }
 }
